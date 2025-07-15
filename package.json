@@ -1,0 +1,10 @@
+{
+	"devDependencies": {
+		"@mdrv/m": "latest",
+		"cbor-x": "latest",
+		"es-toolkit": "latest",
+		"hono": "latest",
+		"js-cookie": "latest",
+		"ts-essentials": "latest"
+	}
+}
