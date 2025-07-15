@@ -1,4 +1,18 @@
 {
+	"name": "@mdrv/ws",
+	"version": "0.1.0",
+	"description": "WS utilities for @mdrv",
+	"homepage": "https://github.com/mdrv/ws",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mdrv/ws.git"
+	},
+	"license": "GPL-3.0",
+	"author": "Umar Alfarouk <medrivia@gmail.com> (https://alfarouk.id)",
+	"type": "module",
+	"exports": {
+		".": "./index.ts",
+	},
 	"devDependencies": {
 		"@mdrv/m": "latest",
 		"cbor-x": "latest",
