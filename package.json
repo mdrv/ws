@@ -5,6 +5,8 @@
 		"es-toolkit": "latest",
 		"hono": "latest",
 		"js-cookie": "latest",
-		"ts-essentials": "latest"
+		"ts-essentials": "latest",
+		"uuid": "latest",
+		"zod": "latest"
 	}
 }
