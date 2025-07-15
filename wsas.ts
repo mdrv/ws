@@ -3,7 +3,6 @@
  * 📝 Empty ping messages will be bypassed.
  */
 import { WS, type Options } from './ws.ts'
-import { ensureBrowserId, ensureAudioFp } from './cookie.ts'
 import { WsWithAction, } from './wsa.ts'
 import { useEventListener } from 'runed'
 import { on } from 'svelte/events'

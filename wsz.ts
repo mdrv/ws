@@ -4,7 +4,6 @@
 
 import type { ServerWebSocket } from 'bun'
 import { type WSContext } from 'hono/ws'
-import type { Exact } from 'ts-essentials'
 import { Decoder, Encoder } from 'cbor-x'
 const encoder = new Encoder({ mapsAsObjects: false })
 const decoder = new Decoder({ mapsAsObjects: false })
