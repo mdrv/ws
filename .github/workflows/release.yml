@@ -4,6 +4,13 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag:
+        required: false
+        type: choice
+        options:
+        - latest
+        - next
 
 jobs:
   release:
@@ -34,13 +41,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
           scope: '@mdrv'
       - name: 'Publish to NPM: `@mdrv/ws`'
-        if: ${{ !github.event.release.prerelease }}
+        if: ${{ !github.event.release.prerelease || inputs.logLevel == 'latest' }}
         run: npm publish --provenance --access public
         env:
           NPM_CONFIG_TOKEN: ${{secrets.NPM_TOKEN}}
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: 'Publish to NPM: `@mdrv/ws` (next)'
-        if: ${{ github.event.release.prerelease }}
+        if: ${{ github.event.release.prerelease || inputs.logLevel == 'next' }}
         run: npm publish --provenance --access public --tag next
         env:
           NPM_CONFIG_TOKEN: ${{secrets.NPM_TOKEN}}
