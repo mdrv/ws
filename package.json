@@ -11,7 +11,7 @@
 	"author": "Umar Alfarouk <medrivia@gmail.com> (https://alfarouk.id)",
 	"type": "module",
 	"exports": {
-		".": "./index.ts",
+		".": "./index.ts"
 	},
 	"devDependencies": {
 		"@mdrv/m": "latest",
