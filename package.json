@@ -13,7 +13,7 @@
 	"exports": {
 		".": "./index.ts"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@mdrv/m": "latest",
 		"cbor-x": "latest",
 		"es-toolkit": "latest",
