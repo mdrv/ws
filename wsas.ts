@@ -2,13 +2,12 @@
  * H: THROTTLE send action of CBORxWS messages by 250ms
  * 📝 Empty ping messages will be bypassed.
  */
-import { type Constructor, type GConstructor } from '@mdrv/m/v254'
 import { WS, type Options } from './ws.ts'
 import { ensureBrowserId, ensureAudioFp } from './cookie.ts'
 import { WsWithAction, } from './wsa.ts'
 import { useEventListener } from 'runed'
 import { on } from 'svelte/events'
-import { __ } from '@mdrv/m/v254/log'
+import { __ } from '@mdrv/m/v257'
 
 export class WsWithSvelte extends WS {
     ready: WS['CONNECTING'] | WS['OPEN'] | WS['CLOSING'] | WS['CLOSED'] = $state(WS.CLOSED)

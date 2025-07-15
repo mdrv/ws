@@ -1,5 +1,5 @@
 import * as Events from './events'
-import { __ } from '@mdrv/m/v254/log'
+import { __ } from '@mdrv/m/v257'
 
 const getGlobalWebSocket = (): WebSocket | undefined => {
 	if (typeof WebSocket !== 'undefined') {

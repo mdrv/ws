@@ -3,7 +3,7 @@ import { Decoder, Encoder } from 'cbor-x'
 const encoder = new Encoder()
 const decoder = new Decoder({ mapsAsObjects: true })
 
-import { type GConstructor } from '@mdrv/m/v254'
+import { type GConstructor } from '@mdrv/m/v257'
 import Cookies from 'js-cookie'
 import { invariant } from 'es-toolkit'
 

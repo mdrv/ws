@@ -10,7 +10,7 @@ const encoder = new Encoder({ mapsAsObjects: false })
 const decoder = new Decoder({ mapsAsObjects: false })
 import { omitBy, isUndefined } from 'es-toolkit'
 
-import { type Entries } from '@mdrv/m/v254'
+import { type Entries } from '@mdrv/m/v257'
 type TwoTypesOfError = string | { cause?: any, message: string }
 
 export class WSZ<

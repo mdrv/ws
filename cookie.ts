@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 import { v7 as uuidv7 } from 'uuid'
-import { getAudioFp } from '@mdrv/m/v254/dom'
+import { getAudioFp } from '@mdrv/m/v257'
 // Mandatory for interacting with WebSocket server
 export const ensureBrowserId = () => {
     // default to always renew expiration date
